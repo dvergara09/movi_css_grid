@@ -53,7 +53,7 @@ figure img{
 
 .container{
     display: grid;
-    grid-template: 100px 1fr / 200px 1fr;
+    grid-template: 100px 1fr / 100px 1fr;
 
     grid-template-areas: "header header"
                          "menu-section peliculas-section";
@@ -85,6 +85,7 @@ figure img{
     justify-content: flex-end;
     align-items: center;
     margin-right: 20px;
+
 }
 
 .user img{
@@ -99,10 +100,20 @@ figure img{
 
 .menu-section{
     grid-area: menu-section;
+    background-color: #fc6b68;
+    color: white;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    margin-left: -50%;
+
 }
 
 .peliculas-section{
     grid-area: peliculas-section;
+    padding: 30px;
 
     
 }
@@ -128,4 +139,39 @@ figure img{
     padding: 11px 5px;
 }
 
+li{
+    list-style: none;
+    align-items: center;
+    text-transform: capitalize;
+    margin: 15px;
+}
 
+.menu-section li:nth-child(4){
+    margin-top: 150%;
+}
+
+.pelicula{
+    position: relative;
+}
+
+.overlay{
+    background-color: #ff595c99;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 50%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    color: white;
+    border-radius: 10px;
+    /* display: none; */
+}
+.overlay h4{
+    margin-bottom: 5px;
+}
+
+.menu-section ul :hover{
+    color: #ffffffa4;
+}
