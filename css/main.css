@@ -36,7 +36,20 @@
 .icon-heart:before {
     content: "\e9da";
 }
-  
+
+body{
+    margin:0;
+}
+ 
+header{
+    background-color: #f6f6f6;
+}
+
+figure img{
+    width: 100%;
+    max-width: 130px;
+    max-height: 100px;
+}
 
 .container{
     display: grid;
@@ -68,7 +81,21 @@
 
 .user{
     grid-area: user;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
 }
+
+.user img{
+    width: 80px;
+    height: 80px;
+}
+
+.user span{
+    font-weight: bold;
+}
+
 
 .menu-section{
     grid-area: menu-section;
@@ -94,9 +121,11 @@
 
 }
 
-figure img{
+.search input{
     width: 100%;
-    max-width: 80px;
-    max-height: 80px;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 11px 5px;
 }
+
 
